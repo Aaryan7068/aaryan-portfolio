@@ -205,3 +205,9 @@ footer {
     color: var(--text-secondary);
     font-family: monospace;
 }
+/* Ensures the clickable project cards retain their styling and don't look like text links */
+.card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
