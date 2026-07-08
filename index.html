@@ -5,111 +5,256 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aaryan Tiwari | Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts & FontAwesome Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <nav>
-        <div class="logo">AT.</div>
-        <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-        </ul>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">&lt;AT /&gt;</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#contact" class="btn-primary-sm">Contact</a></li>
+            </ul>
+        </div>
     </nav>
 
-    <header id="hero">
-        <div class="container hero-content">
-            <h1>AARYAN TIWARI</h1> <p class="subtitle">ML Engineer & Data Scientist</p> <div class="contact-info">
-                <span>Faridabad, Haryana</span> <span>|</span>
-                <span>+91-9311550094</span> <span>|</span>
-                <span>aaryan7068@gmail.com</span> <span>|</span>
-                <a href="#">LinkedIn</a> <span>|</span>
-                <a href="#">GitHub</a> </div>
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <p class="hero-subtitle">Hi, my name is</p>
+            <h1 class="hero-title">Aaryan Tiwari</h1>
+            <h2 class="hero-tagline">I build <span class="typewriter"></span></h2>
+            <p class="hero-description">
+                An Engineering Student specializing in Artificial Intelligence, Machine Learning, and Data Analytics. Focused on computer vision architectures, predictive modeling, and scalable automation pipelines.
+            </p>
+            <div class="hero-cta">
+                <a href="#projects" class="btn-primary">View My Work</a>
+                <a href="#contact" class="btn-secondary">Let's Connect</a>
+            </div>
+            <div class="hero-socials">
+                <a href="https://github.com/aaryan7068" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/tiwariaaryan/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:aaryan7068@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
         </div>
     </header>
 
-    <section id="about" class="container">
-        <h2>Summary</h2> <p>Final-year B.Tech CSE (AI & ML) student at MDU Rohtak, pursuing a concurrent Minor in AI & ML from IIT Guwahati (CGPA 8.2). Hands-on experience in machine learning, computer vision, and business analytics through two internships. Proficient in Python, PyTorch, OpenCV, and data visualization tools. Seeking a full-time role in ML engineering or data science.</p> </section>
+    <!-- About & Education Section -->
+    <section id="about" class="section">
+        <h2 class="section-title">Education</h2>
+        <div class="education-grid">
+            <div class="edu-card">
+                <div class="edu-header">
+                    <h3>Maharshi Dayanand University</h3>
+                    <span class="date">2022 — 2026</span>
+                </div>
+                <p class="degree">B.Tech in CSE (Specialization in AI & ML)</p>
+                <p class="grade"><strong>CGPA:</strong> 7.0 / 10</p>
+                <p class="location"><i class="fas fa-map-marker-alt"></i> Rohtak, Haryana</p>
+            </div>
 
-    <section id="education" class="container">
-        <h2>Education</h2> <div class="card">
-            <h3>IIT Guwahati</h3> <p class="date">Feb 2025 - Jun 2026</p> <p>Minor Degree in AI & ML | CGPA: 8.2</p> </div>
-        <div class="card">
-            <h3>Maharshi Dayanand University, Rohtak</h3> <p class="date">2022 - 2026</p> <p>B.Tech CSE with specialization in AI & ML | CGPA: 6.7</p> </div>
+            <div class="edu-card">
+                <div class="edu-header">
+                    <h3>Indian Institute of Technology</h3>
+                    <span class="date">2026</span>
+                </div>
+                <p class="degree">Minor in AIML</p>
+                <p class="grade"><strong>CGPA:</strong> 8.2 / 10</p>
+                <p class="location"><i class="fas fa-map-marker-alt"></i> Guwahati, Assam</p>
+            </div>
+
+            <div class="edu-card">
+                <div class="edu-header">
+                    <h3>D.A.V. Public School</h3>
+                    <span class="date">2021</span>
+                </div>
+                <p class="degree">Class-XII (CBSE)</p>
+                <p class="grade"><strong>Score:</strong> 92%</p>
+                <p class="location"><i class="fas fa-map-marker-alt"></i> Faridabad, Haryana</p>
+            </div>
+        </div>
     </section>
 
-    <section id="experience" class="container">
-        <h2>Experience</h2> <div class="card">
-            <div class="card-header">
-                <h3>Vallesoft - Business Analyst Intern</h3> <span class="date">Sep 2025 - Feb 2026 | New Delhi</span> </div>
-            <ul>
-                <li>Parsed and analyzed large datasets using Advanced Excel, translating raw data into actionable business insights for leadership teams.</li> <li>Designed and maintained interactive Power BI dashboards tracking key operational metrics and growth KPIs, improving executive visibility.</li> <li>Applied quantitative problem-solving to calculate performance metrics, identifying user engagement drop-off points.</li> </ul>
-        </div>
-        <div class="card">
-            <div class="card-header">
-                <h3>Mercury AI - ML Intern & Security Analyst</h3> <span class="date">Feb 2025 - Jun 2025 | Dwarka, Delhi</span> </div>
-            <ul>
-                <li>Completed training in Kali Linux and penetration testing, applying concepts to identify and report system vulnerabilities.</li> <li>Implemented ANN and deep learning algorithms using Scikit-Learn and NLTK, optimizing model performance through clustering techniques.</li> <li>Grew the Mercury AI social media presence and resolved front-end web-app bugs using HTML, CSS, and JavaScript.</li> </ul>
+    <!-- Skills Section -->
+    <section id="skills" class="section bg-light">
+        <h2 class="section-title">Technical Expertise</h2>
+        <div class="skills-wrapper">
+            <div class="skills-category">
+                <h3>Languages & Concepts</h3>
+                <div class="skills-tags">
+                    <span>Python</span><span>C++</span><span>JavaScript</span><span>SQL</span>
+                    <span>Machine Learning</span><span>OOP</span><span>EDA</span><span>Data Cleaning</span>
+                </div>
+            </div>
+            <div class="skills-category">
+                <h3>Libraries & Frameworks</h3>
+                <div class="skills-tags">
+                    <span>OpenCV</span><span>PyTorch</span><span>YOLOv8</span><span>Pandas</span>
+                    <span>NLTK</span><span>Scikit-Learn</span><span>Streamlit</span>
+                </div>
+            </div>
+            <div class="skills-category">
+                <h3>Analytics & Tools</h3>
+                <div class="skills-tags">
+                    <span>Advanced Excel</span><span>Power BI</span><span>Marketing Analytics</span>
+                    <span>Kali Linux</span><span>Socket Networking</span>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="projects" class="container">
-        <h2>Projects</h2>
-        <div class="grid">
-            <a href="https://github.com/Aaryan7068/FOOTBALL_ANALYSIS" target="_blank" class="card-link">
-                <div class="card">
-                    <h3>Football Match Analysis System</h3>
-                    <p class="tech-stack">OpenCV, PyTorch, YOLOv8, Pickle</p>
-                    <ul>
-                        <li>Built an end-to-end ML pipeline tracking players, referees, and the ball from raw match footage using YOLOv8.</li>
-                        <li>Applied perspective transformation to convert camera footage into a top-down 2D field view.</li>
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <h2 class="section-title">Work History</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-header">
+                        <h3>Data Analyst</h3>
+                        <span class="company">Vallesoft</span>
+                        <span class="timeline-date">Sept 2025 — Feb 2026</span>
+                    </div>
+                    <p class="timeline-location"><i class="fas fa-map-marker-alt"></i> New Delhi</p>
+                    <ul class="timeline-bullets">
+                        <li>Optimized complex SQL queries, reducing data processing time by 50% and improving reporting efficiency.</li>
+                        <li>Developed predictive models for ad targeting and customer segmentation to support campaign decision-making.</li>
+                        <li>Automated data cleaning and reporting workflows using Python and Excel, reducing manual effort and delivery time.</li>
                     </ul>
                 </div>
-            </a>
+            </div>
 
-            <a href="https://github.com/Aaryan7068/Movie_Recommender_System" target="_blank" class="card-link">
-                <div class="card">
-                    <h3>Movie Recommender System</h3>
-                    <p class="tech-stack">NLTK, Scikit-Learn, KNN, Streamlit</p>
-                    <ul>
-                        <li>Built a content-based recommendation engine in Python, deployed as an interactive Streamlit web app.</li>
-                        <li>Processed and vectorized movie metadata with NLTK and Count Vectorizer using cosine similarity.</li>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-header">
+                        <h3>ML Intern & Security Analyst</h3>
+                        <span class="company">Mercury AI</span>
+                        <span class="timeline-date">Feb 2025 — June 2025</span>
+                    </div>
+                    <p class="timeline-location"><i class="fas fa-map-marker-alt"></i> Delhi</p>
+                    <ul class="timeline-bullets">
+                        <li><strong>Cybersecurity & NetAdmin:</strong> Built security architectures and performed network mapping using Kali Linux, penetration testing, and remote administration protocols.</li>
+                        <li><strong>AI & Machine Learning:</strong> Developed neural networks and deep learning models using Scikit-Learn, NLTK, and clustering techniques to optimize project performance.</li>
+                        <li><strong>Web Dev & Digital Growth:</strong> Maintained frontend apps (HTML/CSS/JS), managed corporate data profiles, and scaled digital presence frameworks.</li>
                     </ul>
                 </div>
-            </a>
-
-            <a href="https://github.com/Aaryan7068/server_and_backdoor" target="_blank" class="card-link">
-                <div class="card">
-                    <h3>Remote Code Execution Framework</h3>
-                    <p class="tech-stack">Python, Sockets, TCP/IP, Subprocess</p>
-                    <ul>
-                        <li>Engineered a client-server application in Python enabling remote code execution over a persistent TCP connection.</li>
-                    </ul>
-                </div>
-            </a>
+            </div>
         </div>
     </section>
 
-    <section id="skills" class="container">
-        <h2>Technical Skills</h2> <div class="skills-wrapper">
-            <div class="skill-category">
-                <h4>Languages</h4>
-                <p>Python, C++, JavaScript, SQL</p> </div>
-            <div class="skill-category">
-                <h4>ML & Computer Vision</h4>
-                <p>PyTorch, OpenCV, YOLOv8, Scikit-Learn, NLTK, Pandas, NumPy</p> </div>
-            <div class="skill-category">
-                <h4>Analytics & Data</h4>
-                <p>Power BI, Advanced Excel, Marketing Analytics</p> </div>
-            <div class="skill-category">
-                <h4>Security & Networking</h4>
-                <p>Kali Linux, Penetration Testing, TCP/IP, Network Mapping</p> </div>
+    <!-- Projects Section -->
+    <section id="projects" class="section bg-light">
+    <h2 class="section-title">Featured Projects</h2>
+    <div class="projects-grid">
+        
+        <!-- Project 1: Football Match Analysis -->
+        <a href="https://github.com/Aaryan7068/FOOTBALL_ANALYSIS" target="_blank" class="project-card-link">
+            <div class="project-card">
+                <div class="project-icon"><i class="fas fa-running"></i></div>
+                <h3>Football Match Analysis</h3>
+                <p class="project-date">Aug 2025</p>
+                <p class="project-desc">Engineered an end-to-end video analytics pipeline processing 24 frames/sec to extract tactical insights from broadcast football footage. Features custom possession tracking algorithms and ByteTrack integration.</p>
+                <div class="project-tech">
+                    <span>OpenCV</span><span>PyTorch</span><span>YOLOv8</span><span>Pickle</span>
+                </div>
+            </div>
+        </a>
+
+        <!-- Project 2: Movie Recommender System -->
+        <a href="https://github.com/Aaryan7068/Movie_Recommender_System" target="_blank" class="project-card-link">
+            <div class="project-card">
+                <div class="project-icon"><i class="fas fa-film"></i></div>
+                <h3>Movie Recommender System</h3>
+                <p class="project-date">Mar 2025</p>
+                <p class="project-desc">Developed a content-based recommendation system processing movie datasets. Engineered text features with NLTK, vectorized using Count Vectorizer, and mapped similarities with a KNN modeling structure.</p>
+                <div class="project-tech">
+                    <span>NLTK</span><span>Scikit-Learn</span><span>KNN</span><span>Streamlit</span>
+                </div>
+            </div>
+        </a>
+
+        <!-- Project 3: Remote Code Execution Pipeline -->
+        <a href="https://github.com/Aaryan7068/server_and_backdoor" target="_blank" class="project-card-link">
+            <div class="project-card">
+                <div class="project-icon"><i class="fas fa-terminal"></i></div>
+                <h3>Remote Code Execution Pipeline</h3>
+                <p class="project-date">June 2024</p>
+                <p class="project-desc">Built a secure client-server network framework in Python utilizing structural sockets. Establishes resilient persistent network connections, passing parsed machine-level shell commands smoothly via subprocess handling.</p>
+                <div class="project-tech">
+                    <span>Sockets</span><span>Networking</span><span>TCP/IP</span><span>Python</span>
+                </div>
+            </div>
+        </a>
+
+    </div>
+</section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section">
+        <h2 class="section-title">Certifications & Achievements</h2>
+        <div class="certifications-list">
+            <div class="cert-item">
+                <div class="cert-info">
+                    <i class="fas fa-certificate cert-icon"></i>
+                    <div>
+                        <h4>Google Advanced Data Analytics</h4>
+                        <p class="cert-issuer">Google / Coursera • ID: IH084118HVEL</p>
+                    </div>
+                </div>
+                <a href="https://www.coursera.org/account/accomplishments/specialization/IH084118HVEL" target="_blank" class="btn-text">Verify Credential <i class="fas fa-external-link-alt"></i></a>
+            </div>
+
+            <div class="cert-item">
+                <div class="cert-info">
+                    <i class="fas fa-certificate cert-icon"></i>
+                    <div>
+                        <h4>Google Data Analytics</h4>
+                        <p class="cert-issuer">Google / Coursera • ID: 4GJ290BMBH38</p>
+                    </div>
+                </div>
+                <a href="https://www.coursera.org/account/accomplishments/professional-cert/4GJ290BMBH38" target="_blank" class="btn-text">Verify Credential <i class="fas fa-external-link-alt"></i></a>
+            </div>
+
+            <div class="cert-item">
+                <div class="cert-info">
+                    <i class="fas fa-award cert-icon"></i>
+                    <div>
+                        <h4>100% Merit-Based Academic Scholarship</h4>
+                        <p class="cert-issuer">D.A.V. Public School • Class XI and XII</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="contact-box">
+            <h2>Get In Touch</h2>
+            <p>I am currently looking for opportunites in AI/ML engineering, system architecture, and advanced data analytics. Drop a message or reach out directly!</p>
+            <div class="contact-methods">
+                <a href="mailto:aaryan7068@gmail.com" class="contact-btn"><i class="fas fa-envelope"></i> aaryan7068@gmail.com</a>
+                <a href="tel:+919311550094" class="contact-btn"><i class="fas fa-phone-alt"></i> +91-9311550094</a>
+            </div>
+            <div class="contact-footer-socials">
+                <a href="https://www.linkedin.com/in/tiwariaaryan/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://github.com/aaryan7068" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2026 Aaryan Tiwari. Built for impact.</p>
+        <p>&copy; 2026 Aaryan Tiwari. Built with clean code practices.</p>
     </footer>
 
     <script src="script.js"></script>
